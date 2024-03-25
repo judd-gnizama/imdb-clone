@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.max-image-width {
+    width: 500px;
+}
+
+.max-image-height {
+    height: 300px;
+}

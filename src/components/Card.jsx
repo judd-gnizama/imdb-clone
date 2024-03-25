@@ -9,11 +9,11 @@ export default function Card({ result }) {
             <Image src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
                 width = {500}
                 height = {300}
-                className='sm: rounded-t-lg hover:opacity-75 transition-opacity duration-300'>
+                className='sm: rounded-t-lg hover:opacity-75 transition-opacity duration-300 object-cover'>
             </Image>
             <div className="p-2">
-                <p className="line-clamp-2">{result.overview}</p>
                 <h2 className="text-lg font-bold truncate">{result.title || result.name}</h2>
+                <p className="line-clamp-2">{result.overview}</p>
                 <p className="flex items-center">
                     {result.release_date || result.first_air_date}
                     <FiThumbsUp className="h-5 mr-1 ml-3"/>
